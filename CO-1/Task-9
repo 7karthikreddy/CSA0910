@@ -1,0 +1,31 @@
+interface Chargeable {
+    int chargingFee(int units);
+}
+
+public abstract class Vehicle {
+    String regNo;
+
+    Vehicle(String r) {
+        regNo = r;
+    }
+
+    abstract int fee();
+
+    public static void main(String[] args) {
+        System.out.println("Vehicle abstraction");
+    }
+}
+
+class ElectricCar extends Vehicle implements Chargeable {
+    ElectricCar(String r) {
+        super(r);
+    }
+
+    int fee() {
+        return 30;
+    }
+
+    public int chargingFee(int units) {
+        return units * 12;
+    }
+}
