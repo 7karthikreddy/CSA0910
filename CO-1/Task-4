@@ -1,0 +1,19 @@
+public class Vehicle {
+    String regNo;
+
+    Vehicle(String r) {
+        regNo = r;
+    }
+
+    Vehicle(Vehicle v) {
+        regNo = v.regNo;
+    }
+
+    public static void main(String[] args) {
+        Vehicle v1 = new Vehicle("TN01A1");
+        Vehicle v2 = new Vehicle(v1);
+
+        System.out.println(v1.regNo);
+        System.out.println(v2.regNo);
+    }
+}
