@@ -1,0 +1,31 @@
+class Car extends Vehicle {
+    Car(String r) {
+        super(r);
+    }
+
+    double rate() {
+        return 30;
+    }
+}
+
+public class Vehicle {
+    String regNo;
+
+    Vehicle(String r) {
+        regNo = r;
+    }
+
+    double rate() {
+        return 10;
+    }
+
+    public static void main(String[] args) {
+        Vehicle[] v = {
+            new Vehicle("TN01A1"),
+            new Car("TN02B2")
+        };
+
+        for (Vehicle x : v)
+            System.out.println(x.regNo + " " + x.rate());
+    }
+}
