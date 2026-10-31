@@ -1,0 +1,23 @@
+class Car extends Vehicle {
+    Car() {
+        super();
+    }
+
+    double fee() {
+        return 30;
+    }
+}
+
+public class Vehicle {
+    double fee() {
+        return 10;
+    }
+
+    public static void main(String[] args) {
+        Vehicle v = new Vehicle();
+        Car c = new Car();
+
+        System.out.println(v.fee());
+        System.out.println(c.fee());
+    }
+}
