@@ -1,0 +1,23 @@
+public class Vehicle {
+    private String regNo;
+    private int duration;
+
+    public void setRegNo(String r) {
+        regNo = r;
+    }
+
+    public void setDuration(int d) {
+        if (d >= 0)
+            duration = d;
+    }
+
+    public static void main(String[] args) {
+        Vehicle v = new Vehicle();
+
+        v.setRegNo("TN01A1");
+        v.setDuration(120);
+
+        System.out.println(v.regNo);
+        System.out.println(v.duration);
+    }
+}
