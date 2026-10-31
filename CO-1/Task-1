@@ -1,0 +1,17 @@
+class Vehicle {
+    String regNo, type;
+
+    Vehicle(String r, String t) {
+        regNo = r;
+        type = t;
+    }
+
+    void display() {
+        System.out.println(regNo + " " + type);
+    }
+
+    public static void main(String[] args) {
+        Vehicle v = new Vehicle("TN01A1", "Car");
+        v.display();
+    }
+}
