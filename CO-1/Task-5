@@ -1,0 +1,16 @@
+public class Vehicle {
+    static int count = 1000;
+    int ticket;
+
+    Vehicle() {
+        ticket = ++count;
+    }
+
+    public static void main(String[] args) {
+        Vehicle v1 = new Vehicle();
+        Vehicle v2 = new Vehicle();
+
+        System.out.println(v1.ticket);
+        System.out.println(v2.ticket);
+    }
+}
