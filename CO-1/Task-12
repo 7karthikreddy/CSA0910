@@ -1,0 +1,21 @@
+public class Vehicle {
+    String regNo;
+
+    Vehicle(String r) {
+        regNo = r;
+    }
+
+    double fee() {
+        return 30;
+    }
+
+    public static void main(String[] args) {
+        Vehicle car = new Vehicle("TN01A1");
+        Vehicle ebike = new Vehicle("TN02B2");
+        Vehicle van = new Vehicle("TN03C3");
+
+        System.out.println(car.regNo + " " + car.fee());
+        System.out.println(ebike.regNo + " 50");
+        System.out.println(van.regNo + " 120");
+    }
+}
