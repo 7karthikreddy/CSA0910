@@ -1,0 +1,27 @@
+class TwoWheeler extends Vehicle {
+    TwoWheeler(String r) {
+        super(r);
+    }
+}
+
+class Car extends Vehicle {
+    Car(String r) {
+        super(r);
+    }
+}
+
+public class Vehicle {
+    String regNo;
+
+    Vehicle(String r) {
+        regNo = r;
+    }
+
+    public static void main(String[] args) {
+        TwoWheeler t = new TwoWheeler("TN01A1");
+        Car c = new Car("TN02B2");
+
+        System.out.println(t.regNo);
+        System.out.println(c.regNo);
+    }
+}
