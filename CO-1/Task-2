@@ -1,0 +1,13 @@
+public class Vehicle {
+    public static void main(String[] args) {
+        String regNo = "TN01A1";
+        int slot = 10;
+        int duration = 120;
+        double fee = 50.5;
+
+        System.out.println(regNo);
+        System.out.println(slot);
+        System.out.println(duration);
+        System.out.println(fee);
+    }
+}
