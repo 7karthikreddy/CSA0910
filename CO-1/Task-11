@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Vehicle {
+    String regNo;
+    double rate;
+
+    Vehicle(String r, double x) {
+        regNo = r;
+        rate = x;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Vehicle> list = new ArrayList<>();
+
+        list.add(new Vehicle("TN01A1", 10));
+        list.add(new Vehicle("TN02B2", 30));
+
+        for (Vehicle v : list) {
+            System.out.println(v.regNo);
+            System.out.println(v.rate * 2);
+        }
+    }
+}
